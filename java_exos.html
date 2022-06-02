@@ -8,10 +8,40 @@
     <link rel="stylesheet" href="css/java_exos.css" />
   </head>
   <body>
-    <article></article>
+    <!-- <article> -->
+
+    <form class="formulaire" action="" method="">
+      <textarea
+        id="TextBox1"
+        style="height: 100px; width: 300px"
+        maxlength="300"
+        cols="50"
+        row="30"
+      ></textarea>
+      <button type="submit" value="Envoyer">Envoyer</button>
+    </form>
+    <!-- </article> -->
     <script src="js/java_exos.js"></script>
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"
+    ></script>
     <script>
       // document.write("Bonjour et bienvenue à ce cours de javascript !!");
     </script>
   </body>
 </html>
+
+<!-- Créez un formulaire comportant une zone de texte (textarea) et un bouton submit. 
+Lorsque l'utilisateur ecrit dans la zone de texte, le nombre de caractères restant doit être présenté en temps réel en dessous de la zone de texte en vert. 
+Le nombre de caractères maximal est de 300 caractères. lorsqu'il ne reste plus que 20 caractères, le nombre doit prendre la couleur orange.
+
+lorsque le nombre de caractère devient négatif
+1. Il doit être affiché en rouge.
+2. le bouton submit doit être grisé et le du bouton par la souris doit afficher le curseur interdit.
+3. les bordures de la zone de texte doivent être rouges.
+4. une notification dans la partie supérieur doit apparaitre en rouge sur fond rose.
+
+Si l'utilisateur soumet le formulaire en cliquant sur le bouton submit, Ce denier ne doit pas être envoyé mais javascript doit prendre la main.
+1. lebouton d'envoi doit être grisé. 1. Une notification en vert sur fond vert clair confirmant le succes de l'envoi doit apparaitre pendant une durée de 4 secondes.
+2. la zone de texte doit alors être vidée et réinitialisée et le bouton d'envoi réactivé. -->

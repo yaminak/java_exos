@@ -1,7 +1,32 @@
-.bordered {
+/* .bordered {
   padding: 6px;
   width: 35px;
   border: 5px solid rgb(38, 9, 170);
   display: inline-block;
   text-align: center;
+} */
+
+.formulaire .button {
+  width: 10px;
+  padding: 12px;
+  min-height: 450px;
+}
+textarea {
+  min-height: 250px;
+  color: green;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.formulaire {
+  border: 1px solid transparent;
+  width: 25%;
+  margin: auto;
+}
+#compte {
+  float: right;
+  padding: 0.1rem 0 0 0;
+  font-size: 0.875rem;
 }

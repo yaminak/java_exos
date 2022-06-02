@@ -104,8 +104,6 @@
 //     working
 // );
 
-//
-
 // let oiseau = {
 //   espece: "Pie",
 //   age: "3 mois",
@@ -188,23 +186,65 @@
 // });
 
 //LES FONCTIONS
-const article = document.querySelector("article");
-console.log(article);
+// const article = document.querySelector("article");
+// console.log(article);
 
-article.innerHTML = "<h2>Les Fonctions</h2>";
-const carre = (nombre) => {
-  console.log(nombre);
-  article.innerHTML += `<p>${9 * 9}</p>`;
-};
-carre(9);
+// article.innerHTML = "<h2>Les Fonctions</h2>";
+// const carre = (nombre) => {
+//   console.log(nombre);
+//   article.innerHTML += `<p>${9 * 9}</p>`;
+// };
+// carre(9);
 
-var animal = "orang-outang";
-const mafonction2 = function () {
-  let animal = "Pingouin";
-  let autreAnimal = "Escargot";
-  console.log(animal);
-  return autreAnimal;
-};
-let resultatMaFonction2 = mafonction2();
-console.log(animal);
-console.log(resultatMaFonction2);
+// var animal = "orang-outang";
+
+// const mafonction2 = function () {
+//   let animal = "Pingouin";
+//   let autreAnimal = "Escargot";
+//   console.log(animal);
+//   return autreAnimal;
+// };
+// let resultatMaFonction2 = mafonction2();
+// console.log(animal);
+// console.log(resultatMaFonction2);
+
+// function ecrire(texte) {
+//   mafonction2.innerHTML += `<p><i>${texte}</i></p>`;
+//   return texte.length;
+// }
+// let tailleTexte = ecrire("Bonsoir");
+// ecrire("le texte fait" + tailleTexte + "caractère");
+
+// function ecrire2(texte) {
+//   if (texte.length <= 50) {
+//     let taille = ecrire(texte);
+//     return taille;
+//   } else {
+//     mafonction2.innerHTML += `<p><i>texte trop long ${texte}</i></p>`;
+//     return 0;
+//   }
+// }
+// var tailleChaine = ecrire2(
+//   "jjjjjjjjjjjjjjjjjjjjjjjjjjjjjdhhhhhhhhhhhffffffffffffffffffffffffffffffff"
+// );
+// console.log(tailleChaine);
+// function salutation(name) {
+//   if (name) {
+//     alert("bonjour " + name);
+//   }
+// }
+// function processUserInput(callback) {
+//   let nom = prompt("fonction processUserInput: Entrez votre nom.");
+//   typeof callback === "function" && callback(nom);
+// }
+// processUserInput(salutation);
+// console.log(navigator.connection);
+
+// var docChildren = document.children;
+// console.log(docChildren);
+// var docNodes = document.childNodes;
+// console.log(docNodes);
+$(function () {
+  //Normal Configuration
+  $("[id*=TextBox1]").MaxLength({ MaxLength: 300 });
+});
