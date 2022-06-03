@@ -244,7 +244,47 @@
 // console.log(docChildren);
 // var docNodes = document.childNodes;
 // console.log(docNodes);
-$(function () {
-  //Normal Configuration
-  $("[id*=TextBox1]").MaxLength({ MaxLength: 300 });
+
+function ready(callback) {
+  // in case the document is already rendered
+  if (document.readyState != "loading") callback();
+  // modern browsers
+  else if (document.addEventListener)
+    document.addEventListener("DOMContentLoaded", callback);
+  // IE <= 8
+  else
+    document.attachEvent("onreadystatechange", function () {
+      if (document.readyState == "complete") callback();
+    });
+}
+// ready(function () {
+//   const commentaire = document.querySelector("textarea");
+//   const compteurDecroissant = document.querySelector("#compteur");
+//   const btn = document.querySelector("button");
+//   console.log(btn);
+
+//   commentaire.addEventListener("keyup", function (e) {
+//     let caracteresRestants = 300 - parseInt(this.value.length);
+//     compteurDecroissant.innerHTML = caracteresRestants;
+//     if (caracteresRestants > 20) {
+//       compteurDecroissant.setAttribute("style", "");
+//     } else if (caracteresRestants >= 0 && caracteresRestants <= 20) {
+//       compteurDecroissant.style.color = "orange";
+//     } else {
+//       compteurDecroissant.style.color = "red";
+//     }
+//   });
+// });
+ready(function () {
+  function openImg() {
+    const image = document.querySelector(".zen");
+    const btn = document.querySelector("#openImage");
+    btn.addEventListener("click", function (e) {
+     if (image.classList.contains('d_none')) {
+        image.classList.remove('d_none');
+        btn.innerHTML="faire disparaître l'image";
+     } else {
+image.setAttribute('class', 'd_none');
+btn.innerHTML="Afficher l'image";
+});
 });
