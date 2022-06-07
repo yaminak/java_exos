@@ -245,18 +245,18 @@
 // var docNodes = document.childNodes;
 // console.log(docNodes);
 
-function ready(callback) {
-  // in case the document is already rendered
-  if (document.readyState != "loading") callback();
-  // modern browsers
-  else if (document.addEventListener)
-    document.addEventListener("DOMContentLoaded", callback);
-  // IE <= 8
-  else
-    document.attachEvent("onreadystatechange", function () {
-      if (document.readyState == "complete") callback();
-    });
-}
+// function ready(callback) {
+//   // in case the document is already rendered
+//   if (document.readyState != "loading") callback();
+//   // modern browsers
+//   else if (document.addEventListener)
+//     document.addEventListener("DOMContentLoaded", callback);
+//   // IE <= 8
+//   else
+//     document.attachEvent("onreadystatechange", function () {
+//       if (document.readyState == "complete") callback();
+//     });
+// }
 // ready(function () {
 //   const commentaire = document.querySelector("textarea");
 //   const compteurDecroissant = document.querySelector("#compteur");
@@ -275,16 +275,30 @@ function ready(callback) {
 //     }
 //   });
 // });
-ready(function () {
-  function openImg() {
-    const image = document.querySelector(".zen");
-    const btn = document.querySelector("#openImage");
-    btn.addEventListener("click", function (e) {
-     if (image.classList.contains('d_none')) {
-        image.classList.remove('d_none');
-        btn.innerHTML="faire disparaître l'image";
-     } else {
-image.setAttribute('class', 'd_none');
-btn.innerHTML="Afficher l'image";
-});
-});
+const image = document.querySelector(".d_none");
+const btn = document.querySelector("#openImage");
+image.style.display = "none";
+btn.onclick = () => {
+  if (image.style.display === "none") {
+    image.style.display = "block";
+  } else {
+    image.style.display = "none";
+  }
+};
+const squareIt = (x) => {
+  return x * x;
+};
+console.dir(squareIt);
+
+const boiteDialogue = document.getElementById("text_part1");
+const boiteDialogue2 = document.getElementById("text_part2");
+const userA = document.getElementById("userA");
+console.log(userA);
+const userB = document.querySelector(".userB");
+
+userA &&
+  userA.addEventListener("keyup", function (e) {
+    if (e.keyCode === 13) {
+      alert("125");
+    }
+  });

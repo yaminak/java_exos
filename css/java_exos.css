@@ -36,15 +36,48 @@ body {
   width: 80%;
   margin: 15px auto;
   display: none;
-  flex-direction: column;
 }
 .d_none img {
   width: 300px;
   border: 2px solid black;
 }
 #openImage {
-  width: 30%;
-  justify-content: center;
-  margin: 15px 0;
+  width: 10%;
+  display: flex;
+  margin-left: 240px;
   border: 2px solid black;
+}
+button {
+  justify-content: center;
+}
+
+.fond_gris {
+  background-color: rgb(234, 233, 233);
+  width: 80%;
+  height: 550px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+.user_1,
+.user_2 {
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 25px;
+}
+textarea {
+  width: 45%;
+  height: 200px;
+  margin: 0 auto;
+}
+input {
+  width: 45%;
+  margin: 0 auto;
+}
+p,
+h1 {
+  width: auto;
+  margin-left: 211px;
 }
