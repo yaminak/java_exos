@@ -292,13 +292,12 @@ console.dir(squareIt);
 
 const boiteDialogue = document.getElementById("text_part1");
 const boiteDialogue2 = document.getElementById("text_part2");
-const userA = document.getElementById("userA");
+const utilisateur = document.getElementById("userA");
 console.log(userA);
 const userB = document.querySelector(".userB");
 
-userA &&
-  userA.addEventListener("keyup", function (e) {
-    if (e.keyCode === 13) {
+utilisateur.addEventListener("keyup", function (e) {
+    if (e. === 13) {
       alert("125");
     }
   });
